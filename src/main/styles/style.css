@@ -1,0 +1,22 @@
+p, h1, h2,h3 {
+  margin : 2px 2px 2px 2px;
+  font-family : "Courier New", Courier, monospace;
+}
+
+.main{
+  padding: 5px 5px 5px 5px;
+  /*background-color: #eee;*/
+  width: -moz-fit-content;
+}
+
+button{
+  width: 100%;
+  background-color: #ccc;
+  font-size: 17px;
+  font-family : "Courier New", Courier, monospace;
+}
+
+span{
+  color: #e90000;
+  font-weight: bold;
+}
