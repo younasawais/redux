@@ -22,34 +22,6 @@ class FilterWords extends React.Component{
       )
   }
 
-  // static getDerivedStateFromProps(props, state){
-  //   console.log('getDerivedStateFromProps state',state);
-  //   console.log('getDerivedStateFromProps props',props);
-  //   //props.filterWordList();
-  //   //return true;
-  // }
-  componentDidUpdate(prevProps, prevState){
-    console.log('componentDidUpdate prevProps',prevProps);
-    console.log('componentDidUpdate prevState',prevState);
-    this.filterWordList();
-  }
-  // componentWillMount(){
-  //   console.log('componentWillMount',this.props.reducerLibraryFiltered);
-  //   this.filterWordList();
-  // }
-
-  // componentWillReceiveProps(nextProps){
-  //   console.log('componentWillReceiveProps',this.props.reducerLibraryFiltered);
-  //   const startRangePrev = this.props.reducerSettings.startRange;
-  //   const startRangeNew  = nextProps.reducerSettings.startRange;
-  //   const endRangePrev   = this.props.reducerSettings.endRange;
-  //   const endRangeNew    = nextProps.reducerSettings.endRange;
-  //   const different = startRangeNew !== startRangePrev ? true : endRangePrev !== endRangeNew ? true : false;
-  //   if (different) {
-  //     console.log('componentWillReceiveProps true',this.props.reducerLibraryFiltered);
-  //     this.filterWordList();
-  //   }
-  // }
 
   filterWordList(){
     console.log('filterWordList function',this.props.reducerLibraryFiltered);
@@ -155,48 +127,32 @@ class FilterWords extends React.Component{
 }
 
 export default connect(state => state)(FilterWords);
-// function myAction (value) {
-//   return {
-//     type: "FILTEREDLIBRARY", payload : {'filteredLibrary' : value}
-//   }
-// }
 
-// function mapDispatchToProps(dispatch){
-//   return {
-//     dispatchFilterWordAction: (value) => {
-//       dispatch(myAction(value))
-//     }
-//   }
-//
-//   //this.props.dispatch({type : 'FILTEREDLIBRARY', payload : {'filteredLibrary' : filteredLibrary}});
-// }
-//
-// function mapStateToProps(state){
-//   console.log('state value in mapstate', state);
-//   return{
-//     reducerLibraryFiltered : state.reducerLibraryFiltered,
-//     reducerSettings        : state.reducerSettings,
-//     reducerFullLibrary     : state.reducerFullLibrary,
-//   };
-// }
-//
-// export default connect(mapStateToProps, mapDispatchToProps)(FilterWords)
+  // static getDerivedStateFromProps(props, state){
+  //   console.log('getDerivedStateFromProps state',state);
+  //   console.log('getDerivedStateFromProps props',props);
+  //   //props.filterWordList();
+  //   //return true;
+  // }
+  // componentDidUpdate(prevProps, prevState){
+  //   console.log('componentDidUpdate prevProps',prevProps);
+  //   console.log('componentDidUpdate prevState',prevState);
+  //   this.filterWordList();
+  // }
+  // componentWillMount(){
+  //   console.log('componentWillMount',this.props.reducerLibraryFiltered);
+  //   this.filterWordList();
+  // }
 
-//export default connect(state => state, ...mapStateToProps)(FilterWords);
-//export default connect(state => state, ...mapStateToProps)(FilterWords);
-//export default connect(state => state)(FilterWords);
-
-
-// shouldComponentUpdate(nextProps){
-//   const startRangePrev = this.props.reducerSettings.startRange;
-//   const startRangeNew  = nextProps.reducerSettings.startRange;
-//   const endRangePrev   = this.props.reducerSettings.endRange;
-//   const endRangeNew    = nextProps.reducerSettings.endRange;
-//   const different = startRangeNew !== startRangePrev ? true : endRangePrev !== endRangeNew ? true : false;
-//   return different;
-// }
-//
-// componentWillUpdate(nextProps){
-//   //console.log('compWillUpdate filter',this.props.reducerLibraryFiltered);
-//   this.filterWordList(nextProps);
-// }
+  // componentWillReceiveProps(nextProps){
+  //   console.log('componentWillReceiveProps',this.props.reducerLibraryFiltered);
+  //   const startRangePrev = this.props.reducerSettings.startRange;
+  //   const startRangeNew  = nextProps.reducerSettings.startRange;
+  //   const endRangePrev   = this.props.reducerSettings.endRange;
+  //   const endRangeNew    = nextProps.reducerSettings.endRange;
+  //   const different = startRangeNew !== startRangePrev ? true : endRangePrev !== endRangeNew ? true : false;
+  //   if (different) {
+  //     console.log('componentWillReceiveProps true',this.props.reducerLibraryFiltered);
+  //     this.filterWordList();
+  //   }
+  // }

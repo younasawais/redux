@@ -21,7 +21,7 @@ export class Main extends React.Component {
           <Comments />
           <Answers />
           <Settings />
-          {/* <ControlButton />*/}
+          <ControlButton />
           <Debug /> 
         </div>
       </Provider>
