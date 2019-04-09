@@ -25,7 +25,7 @@ class FilterWords extends React.Component{
 
   filterWordList(){
     console.log('filterWordList function',this.props.reducerLibraryFiltered);
-    const { props } = this
+    const { props } = this;
     let filteredLibrary = {
       word          : [],
       translation1  : [],
